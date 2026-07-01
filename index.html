@@ -6,12 +6,13 @@
 <title>RescueNow 개인정보처리방침 / Privacy Policy</title>
 <style>
   body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
-  h1 { color: #FF9159; } h2 { color: #555; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+  h1 { color: #FF9159; display: flex; align-items: flex-start; gap: 10px; } h2 { color: #555; border-bottom: 1px solid #eee; padding-bottom: 8px; }
   .lang-section { background: #f9f9f9; border-left: 4px solid #FF9159; padding: 10px 20px; margin: 20px 0; }
+  .brand-icon { width: 36px; height: 36px; flex: 0 0 auto; margin-top: 0.15em; }
 </style>
 </head>
 <body>
-<h1>🚨 RescueNow 개인정보처리방침</h1>
+<h1><span class="brand-icon" id="brand-icon" aria-hidden="true"></span>RescueNow 개인정보처리방침</h1>
 <p><strong>최종 업데이트:</strong> 2026년 6월 18일</p>
 
 <div class="lang-section">
@@ -68,5 +69,16 @@
 <h3>6. Contact</h3>
 <p>Privacy inquiries: ehdwp78@gmail.com</p>
 </div>
+
+<script src="assets/lottie.min.js"></script>
+<script>
+  lottie.loadAnimation({
+    container: document.getElementById('brand-icon'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'assets/beacon.json'
+  });
+</script>
 </body>
 </html>
